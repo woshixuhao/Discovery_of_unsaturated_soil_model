@@ -1,0 +1,17 @@
+run at 20230124
+
+use experimental dataset from mulam
+use graph_regression_for_mulam.py (find simplified term, self.epi=0.2,limit var_num lower than 1 (exclude A))
+find the relationship: 1/h~theta
+The result seems to be good
+
+The #0 best expr:, The #0 best fitness: A*(-x - (-x**2 + x**(-2))**C2) 0.009534858425071329
+The #0 best graph: {'nodes': ['add', 'x', 'exp', 'add', 'exp', 'x', 'exp', 'x'], 'edges': [[0, 1], [0, 2], [2, 3], [3, 4], [3, 6], [4, 5], [6, 7]], 'edge_attr': [-1, -1, -100000000.0, -1, 1, 2, -2]}
+The #1 best expr:, The #1 best fitness: A*(-tan(C1*(x + 1)) - 1) 0.01170721988618902
+The #1 best graph: {'nodes': ['add', 'tan', 'add', '1', 'x', '1'], 'edges': [[0, 1], [1, 2], [2, 3], [2, 4], [0, 5]], 'edge_attr': [-1, -100000000.0, 1, 1, -1]}
+The #2 best expr:, The #2 best fitness: A*(-1/x**0.5 + x**(-2))**C0 0.014062559274292846
+The #2 best graph: {'nodes': ['exp', 'add', 'exp', 'x', 'exp', 'x'], 'edges': [[0, 1], [1, 2], [2, 3], [1, 4], [4, 5]], 'edge_attr': [-100000000.0, -1, -0.5, 1, -2]}
+The #3 best expr:, The #3 best fitness: -2*A*(-1 + x**(-2))**C3 0.014810117760507087
+The #3 best graph: {'nodes': ['mul', 'add', '1', 'exp', 'add', 'exp', 'x', '1', '1'], 'edges': [[0, 1], [1, 2], [0, 3], [3, 4], [4, 5], [5, 6], [1, 7], [4, 8]], 'edge_attr': [-1, 1, 1, -100000000.0, 1, -2, 1, -1]}
+The #4 best expr:, The #4 best fitness: A*(-1 + x**(-2))**C0 0.014810117760867873
+The #4 best graph: {'nodes': ['exp', 'add', 'exp', 'x', '1'], 'edges': [[0, 1], [1, 2], [2, 3], [1, 4]], 'edge_attr': [-100000000.0, 1, -2, -1]}
