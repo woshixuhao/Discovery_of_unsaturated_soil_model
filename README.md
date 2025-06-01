@@ -28,10 +28,10 @@ torch-geometric==2.6.1
 # How to reproduce our work?
 1. Install relevant packages (~20 min)  
 2. Run the Equation discovery.py
-   -model=='Train': Discover underlying equation from experimental data by graphic-symbolic regression, about 40 min for parallel computing and several hours for not parallel computing    
-   Note: set self.use_parallel_computing=True for parallel computing.
-   -model=='Valid': Test the performance of the discovered equation
-   -model=='Valid discovered': Show the optimization process of graphic-symbolic regression with the top-5 equations in each epoch.
+   -model=='Train': Discover underlying equation from experimental data by graphic-symbolic regression, about 40 min for parallel computing and several hours for not parallel computing      
+   Note: set self.use_parallel_computing=True for parallel computing.    
+   -model=='Valid': Test the performance of the discovered equation  
+   -model=='Valid discovered': Show the optimization process of graphic-symbolic regression with the top-5 equations in each epoch.  
 3. Run the Valid_on_unsoda.py to test the performance of the discovered equation on Unsoda dataset (1~5 min).
 
 
