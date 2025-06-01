@@ -82,7 +82,7 @@ def calculate_Kr(expr,x,postive_index_begin,positive_index_end):
     #keep larger than 0
 
     numerator_integral = integrate(expr, (x, postive_index_begin, x))
-    denominator_integral = integrate(expr, (x, postive_index_begin, 1))
+    denominator_integral = integrate(expr, (x, postive_index_begin, positive_index_end))
     Kr=x**(0.5)*(numerator_integral/denominator_integral)**2
     return Kr
 
